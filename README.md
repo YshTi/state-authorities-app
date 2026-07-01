@@ -137,3 +137,34 @@ The project is optimized for deployment on **Render.com** (Free Tier compliant):
 
 - **RAM Footprint Optimization:** The Node.js parser utilizes optimized heap limit hooks (`--max-old-space-size=384`) to operate safely under Render's 512MB memory boundary.
 - **Environment Variables Checklist:** Ensure `DATABASE_URL`, `DIRECT_URL` `GEMINI_API_KEY`, `JWT_SECRET`, `NODE_ENV=production`, `VITE_API_URL` (for web client), and `FRONTEND_URL` (for backend CORS) are set.
+
+---
+# State Authorities App
+
+## Description
+
+This project was made during the Kharkiv IT Cluster Bootcamp 2026. The purpose of the project is to collect all administrative institutions of Ukraine in one app where you can find not only the name of the Authority, but also how to contact them if needed.
+
+## Project Features
+The project consists of 2 parts connected with each other: 
+* **Backend Part** *that stores the list with the full information of the Institution and its recent news in the database*
+* **Frontend Part** *that is responsible for the design of the app and its connection with database*
+
+## Structure
+The app has 3 pages:
+1. **Home Page** where you can find a general information about the amount of the Institutions and their categories
+2. **Catalog Page** where you can filter authorities based on their categories (in future development plan you will be able to filter them also by type and region). By clicking on the Card of an institution you will be redirected to the
+    * **Institution Card Page** which stores contact and gereral information about this institution and its recent news
+3. **Admin Page** - this page is available only for the Administrator in order to be able to modify a database or institution information separately (as well as delete it) and exstract current database to the CSV file.
+
+## Working app website
+
+You may see the final product for June 2026 on the [State Authorities website](https://state-authorities-app-1.onrender.com/).
+
+Be aware, that Backend team leader did not plan to keep the database running on render for too long, so at some point the link will not be available.
+
+## Personal Contribution
+In this project I was a Frontend team leader and was responsible not only for navigating the team and separate responsibilities but also for the code review.
+
+As a developer I connected the admin panel to the backend and integrated data fetching through the API. I developed the full CRUD functionality, including creating, editing, and deleting institutions, and added support for CSV file import/export. Finally, I adjusted the UI to match the provided design mockups and verified that all features work correctly with the backend. Except this part, I also checked and modified UI/UX design for home page main section, Institution card page and all modal windows that are available in this app.# state-authorities
+
